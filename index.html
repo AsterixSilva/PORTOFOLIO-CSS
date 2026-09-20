@@ -6,161 +6,86 @@
 
     <title>Reyfandi Abdillah Ilham | Portfolio</title>
 
-    <link href="output.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
-<body class="bg-slate-950 text-slate-200">
+<body>
 
     <!-- ================= NAVBAR ================= -->
-    <header class="sticky top-0 z-50 border-b border-slate-800 bg-slate-950/90 backdrop-blur">
+    <header class="site-header">
+        <div class="container navbar">
 
-        <div class="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-
-            <!-- Logo -->
-            <a href="#home"
-               class="text-xl font-bold tracking-wider text-cyan-400">
-                REYFAN<span class="text-white"> </span>
+            <a href="#home" class="logo">
+                REYFAN<span>_</span>
             </a>
 
-            <!-- Navigation -->
-            <nav class="hidden gap-7 text-sm md:flex">
-
-                <a href="#home"
-                   class="transition hover:text-cyan-400">
-                    Home
-                </a>
-
-                <a href="#about"
-                   class="transition hover:text-cyan-400">
-                    About
-                </a>
-
-                <a href="#education"
-                   class="transition hover:text-cyan-400">
-                    Education
-                </a>
-
-                <a href="#skills"
-                   class="transition hover:text-cyan-400">
-                    Skills
-                </a>
-
-                <a href="#projects"
-                   class="transition hover:text-cyan-400">
-                    Projects
-                </a>
-
-                <a href="#contact"
-                   class="transition hover:text-cyan-400">
-                    Contact
-                </a>
-
+            <nav class="nav-links">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#education">Education</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
             </nav>
 
-            <!-- Status -->
-            <div class="hidden items-center gap-2 rounded-full border border-slate-700 px-3 py-1 text-xs sm:flex">
-
-                <span class="h-2 w-2 rounded-full bg-green-400"></span>
-
-                <span class="text-slate-400">
-                    Still Learning
-                </span>
-
+            <div class="status">
+                <span class="status-dot"></span>
+                Still Learning
             </div>
 
         </div>
-
     </header>
 
 
     <main>
 
         <!-- ================= HOME ================= -->
-        <section id="home"
-                 class="relative overflow-hidden">
+        <section id="home" class="hero">
+            <div class="hero-glow hero-glow-left"></div>
+            <div class="hero-glow hero-glow-right"></div>
 
-            <!-- Background decoration -->
-            <div class="absolute -left-32 top-20 h-72 w-72 rounded-full bg-cyan-500/10 blur-3xl"></div>
+            <div class="container hero-container">
 
-            <div class="absolute -right-32 bottom-0 h-72 w-72 rounded-full bg-blue-500/10 blur-3xl"></div>
+                <div class="hero-content">
 
+                    <p class="hero-greeting">Hi, saya</p>
 
-            <div class="relative mx-auto grid min-h-[90vh] max-w-6xl items-center gap-12 px-6 py-20 md:grid-cols-2">
-
-                <!-- Text -->
-                <div>
-
-                    <p class="mb-2 text-lg text-slate-400">
-                        Hi, saya
-                    </p>
-
-                    <h1 class="text-4xl font-bold leading-tight text-white sm:text-5xl">
-
+                    <h1>
                         Reyfandi
-                        <span class="text-cyan-400">
-                            Abdillah Ilham
-                        </span>
-
+                        <span>Abdillah Ilham</span>
                     </h1>
 
-                    <h2 class="mt-5 text-xl font-semibold text-slate-300">
-
-                        Mahasiswa
-                        <span class="text-cyan-400">
-                            S1 Ilmu Komputer
-                        </span>
-
+                    <h2>
+                        Mahasiswa <span>S1 Ilmu Komputer</span>
                     </h2>
 
-
-                    <p class="mt-4 max-w-xl leading-7 text-slate-400">
-
+                    <p class="hero-description">
                         Saya sedang belajar tentang teknologi, pemrograman,
                         web development, dan automation. Portfolio ini menjadi
                         tempat saya menyimpan proses belajar dan project yang
                         sedang saya kerjakan.
-
                     </p>
 
-
-                    <!-- Buttons -->
-                    <div class="mt-8 flex flex-wrap gap-4">
-
-                        <a href="#projects"
-                           class="rounded-lg bg-cyan-500 px-6 py-3 font-semibold text-slate-950 transition hover:bg-cyan-400 hover:shadow-lg hover:shadow-cyan-500/20">
-
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">
                             Lihat Project
-
                         </a>
 
-
-                        <a href="#contact"
-                           class="rounded-lg border border-slate-700 px-6 py-3 font-semibold transition hover:border-cyan-400 hover:text-cyan-400">
-
+                        <a href="#contact" class="btn btn-outline">
                             Hubungi Saya
-
                         </a>
-
                     </div>
 
+                    <div class="university-info">
 
-                    <!-- University -->
-                    <div class="mt-10 flex items-center gap-4">
-
-                        <img src="universitas.jpg"
-                             alt="Logo Universitas Negeri Medan"
-                             class="h-14 w-14 rounded-xl border border-slate-700 bg-white object-contain p-1">
+                        <img
+                            src="universitas.jpg"
+                            alt="Logo Universitas Negeri Medan"
+                        >
 
                         <div>
-
-                            <p class="text-sm text-slate-500">
-                                Currently studying at
-                            </p>
-
-                            <p class="font-semibold text-slate-200">
-                                Universitas Negeri Medan
-                            </p>
-
+                            <p>Currently studying at</p>
+                            <strong>Universitas Negeri Medan</strong>
                         </div>
 
                     </div>
@@ -168,110 +93,67 @@
                 </div>
 
 
-                <!-- Profile -->
-                <div class="flex justify-center md:justify-end">
+                <div class="profile-area">
 
-                    <div class="relative">
+                    <div class="profile-frame">
+                        <div class="profile-border profile-border-one"></div>
+                        <div class="profile-border profile-border-two"></div>
 
-                        <!-- Decorative box -->
-                        <div class="absolute -inset-3 rounded-3xl border border-cyan-400/20"></div>
-
-                        <div class="absolute -inset-6 rounded-3xl border border-slate-800"></div>
-
-
-                        <!-- Image -->
-                        <div class="relative overflow-hidden rounded-3xl border border-slate-700 bg-slate-900">
-
-                            <img src="fotorey.png"
-                                 alt="Foto Reyfandi Abdillah Ilham"
-                                 class="h-80 w-64 object-cover sm:h-96 sm:w-72">
-
+                        <div class="profile-image-box">
+                            <img
+                                src="fotorey.png"
+                                alt="Foto Reyfandi Abdillah Ilham"
+                            >
                         </div>
 
-
-                        <!-- Code card -->
-                        <div class="absolute -bottom-6 -left-10 hidden rounded-xl border border-slate-700 bg-slate-900 px-5 py-4 shadow-xl sm:block">
-
-                            <p class="font-mono text-xs text-slate-500">
-                                student_status
-                            </p>
-
-                            <p class="mt-1 font-mono text-sm text-cyan-400">
-                                "still_learning..."
-                            </p>
-
+                        <div class="student-card">
+                            <small>student_status</small>
+                            <p>"still_learning..."</p>
                         </div>
-
                     </div>
 
                 </div>
 
             </div>
-
         </section>
 
 
         <!-- ================= ABOUT ================= -->
-        <section id="about"
-                 class="border-t border-slate-800 bg-slate-900/40">
+        <section id="about" class="section section-dark">
 
-            <div class="mx-auto max-w-6xl px-6 py-24">
+            <div class="container">
 
-                <div class="mb-12">
-
-                    <p class="font-mono text-sm text-cyan-400">
-                        01. about_me
-                    </p>
-
-                    <h2 class="mt-2 text-3xl font-bold text-white">
-                        Tentang Saya
-                    </h2>
-
+                <div class="section-heading">
+                    <p>01. about_me</p>
+                    <h2>Tentang Saya</h2>
                 </div>
 
+                <div class="about-grid">
 
-                <div class="grid gap-8 md:grid-cols-2">
+                    <article class="card">
+                        <div class="card-icon">💻</div>
 
-                    <div class="rounded-2xl border border-slate-800 bg-slate-950 p-7">
+                        <h3>Mahasiswa Ilmu Komputer</h3>
 
-                        <div class="mb-5 text-3xl">
-                            💻
-                        </div>
-
-                        <h3 class="mb-3 text-xl font-bold text-white">
-                            Mahasiswa Ilmu Komputer
-                        </h3>
-
-                        <p class="leading-7 text-slate-400">
-
+                        <p>
                             Saya adalah mahasiswa Ilmu Komputer Universitas
                             Negeri Medan yang sedang membangun dasar dalam
                             pemrograman dan pengembangan website.
-
                         </p>
+                    </article>
 
-                    </div>
 
+                    <article class="card">
+                        <div class="card-icon">⚙️</div>
 
-                    <div class="rounded-2xl border border-slate-800 bg-slate-950 p-7">
+                        <h3>Belajar Automation</h3>
 
-                        <div class="mb-5 text-3xl">
-                            ⚙️
-                        </div>
-
-                        <h3 class="mb-3 text-xl font-bold text-white">
-                            Belajar Automation
-                        </h3>
-
-                        <p class="leading-7 text-slate-400">
-
+                        <p>
                             Saat ini saya juga tertarik mempelajari automation
                             menggunakan n8n untuk memahami bagaimana pekerjaan
                             yang berulang dapat dibuat menjadi lebih otomatis.
-
                         </p>
-
-                    </div>
+                    </article>
 
                 </div>
 
@@ -280,256 +162,137 @@
         </section>
 
 
- <!-- ================= EDUCATION ================= -->
-<section id="education">
+        <!-- ================= EDUCATION ================= -->
+        <section id="education" class="section">
 
-    <div class="mx-auto max-w-6xl px-6 py-24">
+            <div class="container">
 
-        <div class="mb-12">
-
-            <p class="font-mono text-sm text-cyan-400">
-                02. education
-            </p>
-
-            <h2 class="mt-2 text-3xl font-bold text-white">
-                Pendidikan
-            </h2>
-
-            <p class="mt-3 text-slate-500">
-                Perjalanan pendidikan saya dari sekolah hingga perguruan tinggi.
-            </p>
-
-        </div>
-
-
-        <!-- Timeline -->
-        <div class="relative border-l border-slate-700 pl-8">
-
-
-            <!-- SD -->
-            <div class="relative mb-12">
-
-                <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full
-                             border-4 border-slate-950 bg-cyan-400">
-                </span>
-
-                <p class="font-mono text-sm text-cyan-400">
-                    2013 - 2019
-                </p>
-
-                <h3 class="mt-2 text-xl font-bold text-white">
-                    MIS AZ-ZAHROH
-                </h3>
-
-                <p class="mt-2 text-slate-400">
-                    Madrasah Ibtidaiyah
-                </p>
-
-            </div>
-
-
-            <!-- SMP -->
-            <div class="relative mb-12">
-
-                <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full
-                             border-4 border-slate-950 bg-cyan-400">
-                </span>
-
-                <p class="font-mono text-sm text-cyan-400">
-                    2019 - 2022
-                </p>
-
-                <h3 class="mt-2 text-xl font-bold text-white">
-                    SMPN 15 ISLAM TERPADU BINJAI
-                </h3>
-
-                <p class="mt-2 text-slate-400">
-                    Sekolah Menengah Pertama
-                </p>
-
-            </div>
-
-
-            <!-- SMA -->
-            <div class="relative mb-12">
-
-                <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full
-                             border-4 border-slate-950 bg-cyan-400">
-                </span>
-
-                <p class="font-mono text-sm text-cyan-400">
-                    2022 - 2025
-                </p>
-
-                <h3 class="mt-2 text-xl font-bold text-white">
-                    MADRASAH ALIYAH NEGERI BINJAI
-                </h3>
-
-                <p class="mt-2 text-slate-400">
-                    Sekolah Menengah Atas / Madrasah Aliyah
-                </p>
-
-            </div>
-
-
-            <!-- UNIVERSITAS -->
-            <div class="relative">
-
-                <span class="absolute -left-[41px] top-1 h-5 w-5 rounded-full
-                             border-4 border-slate-950 bg-cyan-400">
-                </span>
-
-                <p class="font-mono text-sm text-cyan-400">
-                    2025 - Sekarang
-                </p>
-
-                <h3 class="mt-2 text-xl font-bold text-white">
-                    UNIVERSITAS NEGERI MEDAN (UNIMED)
-                </h3>
-
-                <p class="mt-2 text-slate-400">
-                    S1 - Ilmu Komputer
-                </p>
-
-                <p class="mt-4 max-w-2xl leading-7 text-slate-500">
-
-                    Sedang mempelajari dasar-dasar ilmu komputer,
-                    pemrograman, matematika, dan berbagai teknologi
-                    yang berkaitan dengan pengembangan perangkat lunak.
-
-                </p>
-
-            </div>
-
-
-        </div>
-
-    </div>
-
-</section>
-
-        <!-- ================= SKILLS ================= -->
-        <section id="skills"
-                 class="border-t border-slate-800 bg-slate-900/40">
-
-            <div class="mx-auto max-w-6xl px-6 py-24">
-
-                <div class="mb-12">
-
-                    <p class="font-mono text-sm text-cyan-400">
-                        03. skills
-                    </p>
-
-                    <h2 class="mt-2 text-3xl font-bold text-white">
-                        Skills
-                    </h2>
-
-                    <p class="mt-3 text-slate-500">
-                        Teknologi yang sedang saya pelajari.
-                    </p>
-
+                <div class="section-heading">
+                    <p>02. education</p>
+                    <h2>Pendidikan</h2>
+                    <span>
+                        Perjalanan pendidikan saya dari sekolah hingga perguruan tinggi.
+                    </span>
                 </div>
 
 
-                <div class="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+                <div class="timeline">
+
+                    <article class="timeline-item">
+                        <span class="timeline-dot"></span>
+
+                        <p class="timeline-year">2013 - 2019</p>
+
+                        <h3>MIS AZ-ZAHROH</h3>
+
+                        <p>Madrasah Ibtidaiyah</p>
+                    </article>
 
 
-                    <!-- HTML -->
-                    <div class="group rounded-xl border border-slate-800 bg-slate-950 p-6 transition hover:-translate-y-1 hover:border-orange-400/50">
+                    <article class="timeline-item">
+                        <span class="timeline-dot"></span>
 
-                        <div class="flex items-center justify-between">
+                        <p class="timeline-year">2019 - 2022</p>
 
-                            <h3 class="text-lg font-bold text-white">
-                                HTML
-                            </h3>
+                        <h3>SMPN 15 ISLAM TERPADU BINJAI</h3>
 
-                            <span class="font-mono text-sm text-orange-400">
-                                Beginner
-                            </span>
-
-                        </div>
-
-                        <div class="mt-5 h-2 rounded-full bg-slate-800">
-
-                            <div class="h-2 w-[45%] rounded-full bg-orange-400"></div>
-
-                        </div>
-
-                    </div>
+                        <p>Sekolah Menengah Pertama</p>
+                    </article>
 
 
-                    <!-- CSS -->
-                    <div class="group rounded-xl border border-slate-800 bg-slate-950 p-6 transition hover:-translate-y-1 hover:border-blue-400/50">
+                    <article class="timeline-item">
+                        <span class="timeline-dot"></span>
 
-                        <div class="flex items-center justify-between">
+                        <p class="timeline-year">2022 - 2025</p>
 
-                            <h3 class="text-lg font-bold text-white">
-                                CSS
-                            </h3>
+                        <h3>MADRASAH ALIYAH NEGERI BINJAI</h3>
 
-                            <span class="font-mono text-sm text-blue-400">
-                                Beginner
-                            </span>
-
-                        </div>
-
-                        <div class="mt-5 h-2 rounded-full bg-slate-800">
-
-                            <div class="h-2 w-[35%] rounded-full bg-blue-400"></div>
-
-                        </div>
-
-                    </div>
+                        <p>Sekolah Menengah Atas / Madrasah Aliyah</p>
+                    </article>
 
 
-                    <!-- n8n -->
-                    <div class="group rounded-xl border border-slate-800 bg-slate-950 p-6 transition hover:-translate-y-1 hover:border-pink-400/50">
+                    <article class="timeline-item timeline-current">
+                        <span class="timeline-dot"></span>
 
-                        <div class="flex items-center justify-between">
+                        <p class="timeline-year">2025 - Sekarang</p>
 
-                            <h3 class="text-lg font-bold text-white">
-                                n8n Automation
-                            </h3>
+                        <h3>UNIVERSITAS NEGERI MEDAN (UNIMED)</h3>
 
-                            <span class="font-mono text-sm text-pink-400">
-                                Newbie
-                            </span>
+                        <p>S1 - Ilmu Komputer</p>
 
-                        </div>
-
-                        <div class="mt-5 h-2 rounded-full bg-slate-800">
-
-                            <div class="h-2 w-[20%] rounded-full bg-pink-400"></div>
-
-                        </div>
-
-                    </div>
-
-
-                    <!-- Learning -->
-                    <div class="group rounded-xl border border-dashed border-slate-700 bg-slate-950/50 p-6">
-
-                        <p class="font-mono text-sm text-slate-500">
-                            // next_to_learn
+                        <p class="timeline-description">
+                            Sedang mempelajari dasar-dasar ilmu komputer,
+                            pemrograman, matematika, dan berbagai teknologi
+                            yang berkaitan dengan pengembangan perangkat lunak.
                         </p>
+                    </article>
 
-                        <div class="mt-4 flex flex-wrap gap-2">
+                </div>
 
-                            <span class="rounded-md bg-slate-800 px-3 py-1 text-sm text-slate-400">
-                                JavaScript
-                            </span>
+            </div>
 
-                            <span class="rounded-md bg-slate-800 px-3 py-1 text-sm text-slate-400">
-                                Git
-                            </span>
+        </section>
 
-                            <span class="rounded-md bg-slate-800 px-3 py-1 text-sm text-slate-400">
-                                React
-                            </span>
 
+        <!-- ================= SKILLS ================= -->
+        <section id="skills" class="section section-dark">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p>03. skills</p>
+                    <h2>Skills</h2>
+                    <span>Teknologi yang sedang saya pelajari.</span>
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <h3>HTML</h3>
+                            <span>Beginner</span>
                         </div>
 
-                    </div>
+                        <div class="progress">
+                            <div class="progress-bar progress-html"></div>
+                        </div>
+                    </article>
+
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <h3>CSS</h3>
+                            <span>Beginner</span>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar progress-css"></div>
+                        </div>
+                    </article>
+
+
+                    <article class="skill-card">
+                        <div class="skill-header">
+                            <h3>n8n Automation</h3>
+                            <span>Newbie</span>
+                        </div>
+
+                        <div class="progress">
+                            <div class="progress-bar progress-n8n"></div>
+                        </div>
+                    </article>
+
+
+                    <article class="skill-card skill-learning">
+                        <p class="code-label">// next_to_learn</p>
+
+                        <div class="learning-tags">
+                            <span>JavaScript</span>
+                            <span>Git</span>
+                            <span>React</span>
+                        </div>
+                    </article>
 
                 </div>
 
@@ -539,91 +302,54 @@
 
 
         <!-- ================= PROJECTS ================= -->
-        <section id="projects">
+        <section id="projects" class="section">
 
-            <div class="mx-auto max-w-6xl px-6 py-24">
+            <div class="container">
 
-                <div class="mb-12">
-
-                    <p class="font-mono text-sm text-cyan-400">
-                        04. projects
-                    </p>
-
-                    <h2 class="mt-2 text-3xl font-bold text-white">
-                        Projects
-                    </h2>
-
-                    <p class="mt-3 text-slate-500">
+                <div class="section-heading">
+                    <p>04. projects</p>
+                    <h2>Projects</h2>
+                    <span>
                         Beberapa project yang sedang dan pernah saya kerjakan.
-                    </p>
-
+                    </span>
                 </div>
 
 
-                <!-- Project Card -->
-                <article class="group rounded-2xl border border-slate-800 bg-slate-900 p-7 transition hover:border-cyan-400/40">
+                <article class="project-card">
 
-                    <div class="flex items-start justify-between gap-5">
+                    <div class="project-top">
 
                         <div>
+                            <p class="project-number">PROJECT_01</p>
 
-                            <p class="font-mono text-sm text-cyan-400">
-                                PROJECT_01
-                            </p>
-
-                            <h3 class="mt-3 text-2xl font-bold text-white">
-                                Personal Portfolio
-                            </h3>
-
+                            <h3>Personal Portfolio</h3>
                         </div>
 
-                        <span class="rounded-lg border border-slate-700 px-3 py-1 text-xs text-slate-500">
-                            HTML
-                        </span>
+                        <span class="project-type">HTML + CSS</span>
 
                     </div>
 
 
-                    <p class="mt-5 max-w-3xl leading-7 text-slate-400">
-
+                    <p class="project-description">
                         Website portfolio pribadi untuk memperkenalkan diri,
                         pendidikan, skill, project, dan informasi kontak.
-                        Project ini juga menjadi salah satu latihan saya
-                        dalam mempelajari HTML, CSS, dan Tailwind CSS.
-
+                        Project ini menjadi salah satu latihan saya dalam
+                        mempelajari HTML dan CSS secara langsung.
                     </p>
 
 
-                    <div class="mt-6 flex flex-wrap gap-2">
-
-                        <span class="rounded-md bg-slate-800 px-3 py-1 text-sm text-slate-400">
-                            HTML
-                        </span>
-
-                        <span class="rounded-md bg-slate-800 px-3 py-1 text-sm text-slate-400">
-                            Tailwind CSS
-                        </span>
-
-                        <span class="rounded-md bg-slate-800 px-3 py-1 text-sm text-slate-400">
-                            Responsive Design
-                        </span>
-
+                    <div class="tags">
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>Responsive Design</span>
                     </div>
 
                 </article>
 
 
-                <!-- Coming Soon -->
-                <div class="mt-6 rounded-2xl border border-dashed border-slate-800 p-8 text-center">
-
-                    <p class="font-mono text-sm text-slate-600">
-                        // more_projects_coming_soon
-                    </p>
-
-                    <p class="mt-2 text-slate-500">
-                        Sedang belajar dan membangun project berikutnya...
-                    </p>
-
+                <div class="coming-soon">
+                    <p>// more_projects_coming_soon</p>
+                    <span>Sedang belajar dan membangun project berikutnya...</span>
                 </div>
 
             </div>
@@ -632,90 +358,64 @@
 
 
         <!-- ================= CONTACT ================= -->
-        <section id="contact"
-                 class="border-t border-slate-800 bg-slate-900/40">
+        <section id="contact" class="section section-dark">
 
-            <div class="mx-auto max-w-4xl px-6 py-24 text-center">
+            <div class="container contact-section">
 
-                <p class="font-mono text-sm text-cyan-400">
-                    05. contact
-                </p>
+                <div class="section-heading center">
+                    <p>05. contact</p>
 
-                <h2 class="mt-3 text-4xl font-bold text-white">
-                    Mari Terhubung
-                </h2>
+                    <h2>Mari Terhubung</h2>
 
-                <p class="mx-auto mt-5 max-w-xl leading-7 text-slate-400">
-
-                    Kalau ingin mengenal saya lebih jauh atau berdiskusi
-                    tentang teknologi dan project, kamu bisa menghubungi
-                    saya melalui beberapa platform berikut.
-
-                </p>
+                    <span>
+                        Kalau ingin mengenal saya lebih jauh atau berdiskusi
+                        tentang teknologi dan project, kamu bisa menghubungi
+                        saya melalui beberapa platform berikut.
+                    </span>
+                </div>
 
 
-                <!-- Contact Cards -->
-                <div class="mt-10 grid gap-4 sm:grid-cols-3">
+                <div class="contact-grid">
 
+                    <a
+                        href="mailto:reyfandiabdillahilham@gmail.com"
+                        class="contact-card"
+                    >
+                        <div class="contact-icon">✉️</div>
 
-                    <!-- Email -->
-                    <a href="mailto:reyfandiabdillahilham@gmail.com"
-                       class="rounded-xl border border-slate-800 bg-slate-950 p-5 transition hover:-translate-y-1 hover:border-cyan-400">
+                        <h3>Email</h3>
 
-                        <div class="text-2xl">
-                            ✉️
-                        </div>
-
-                        <p class="mt-3 font-semibold text-white">
-                            Email
-                        </p>
-
-                        <p class="mt-1 break-all text-xs text-slate-500">
+                        <p>
                             reyfandiabdillahilham@gmail.com
                         </p>
-
                     </a>
 
 
-                    <!-- Github -->
-                    <a href="https://github.com/AsterixSilva"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="rounded-xl border border-slate-800 bg-slate-950 p-5 transition hover:-translate-y-1 hover:border-cyan-400">
+                    <a
+                        href="https://github.com/AsterixSilva"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card"
+                    >
+                        <div class="contact-icon">💻</div>
 
-                        <div class="text-2xl">
-                            💻
-                        </div>
+                        <h3>GitHub</h3>
 
-                        <p class="mt-3 font-semibold text-white">
-                            GitHub
-                        </p>
-
-                        <p class="mt-1 text-xs text-slate-500">
-                            @AsterixSilva
-                        </p>
-
+                        <p>@AsterixSilva</p>
                     </a>
 
 
-                    <!-- Instagram -->
-                    <a href="https://www.instagram.com/reyfan_rai"
-                       target="_blank"
-                       rel="noopener noreferrer"
-                       class="rounded-xl border border-slate-800 bg-slate-950 p-5 transition hover:-translate-y-1 hover:border-cyan-400">
+                    <a
+                        href="https://www.instagram.com/reyfan_rai"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="contact-card"
+                    >
+                        <div class="contact-icon">📷</div>
 
-                        <div class="text-2xl">
-                            📷
-                        </div>
+                        <h3>Instagram</h3>
 
-                        <p class="mt-3 font-semibold text-white">
-                            Instagram
-                        </p>
-
-                        <p class="mt-1 text-xs text-slate-500">
-                            @reyfan_rai
-                        </p>
-
+                        <p>@reyfan_rai</p>
                     </a>
 
                 </div>
@@ -728,22 +428,19 @@
 
 
     <!-- ================= FOOTER ================= -->
-    <footer class="border-t border-slate-800">
+    <footer>
 
-        <div class="mx-auto flex max-w-6xl flex-col items-center justify-between gap-3 px-6 py-8 text-sm sm:flex-row">
+        <div class="container footer">
 
-            <p class="text-slate-500">
-                © 2026 Reyfandi Abdillah Ilham
-            </p>
+            <p>© 2026 Reyfandi Abdillah Ilham</p>
 
-            <p class="font-mono text-slate-600">
-                built_with_html + tailwind
+            <p class="footer-code">
+                built_with_html + css
             </p>
 
         </div>
 
     </footer>
-
 
 </body>
 </html>
